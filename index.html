@@ -18,10 +18,10 @@
 
                 <nav id="navMenu">
                     <ul>
-                        <li><a class="active" href="#" id="homeNavBtn">Home</a></li>
-                        <li><a href="#idea-video" id="ideaNavBtn">Our idea</a></li>
-                        <li><a href="#meet-team" id="teamNavBtn">The team</a></li>
-                        <li><a href="#contact-us" id="contactNavBtn">Contact us</a></li>
+                        <li><a class="active" href="javascript:scrollToSection('home')" id="homeNavBtn">Home</a></li>
+                        <li><a href="javascript:scrollToSection('idea-video')" id="ideaNavBtn">Our idea</a></li>
+                        <li><a href="javascript:scrollToSection('meet-team')" id="teamNavBtn">The team</a></li>
+                        <li><a href="javascript:scrollToSection('contact-us')" id="contactNavBtn">Contact us</a></li>
                     </ul>
                 </nav>
 
@@ -44,13 +44,13 @@
             <h3 class="secondary">Reducing the environmental impact of dairy farming</h3>
         
             <div class="call-to-action-btn">
-                <a href="#" class="btn btn-rounded btn-accent">Learn more</a>
-                <a href="#" class="btn btn-rounded btn-primary">Meet the team</a>
+                <a href="javascript:scrollToSection('idea-video')" class="btn btn-rounded btn-accent">Learn more</a>
+                <a href="javascript:scrollToSection('meet-team')" class="btn btn-rounded btn-primary">Meet the team</a>
             </div>
         </div>
 
         <div class="next-arrow mt-5 animated fadeInDown">
-            <a href="#idea-video"><img src="assets/arrow_down.png"></a>
+            <a onclick="scrollToSection('idea-video')"><img src="assets/arrow_down.png"></a>
         </div>
 
     </section>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="next-arrow mt-5 animated fadeInDown">
-            <a href="#meet-team"><img src="assets/arrow_down_light.png"></a>
+            <a onclick="scrollToSection('meet-team')"><img src="assets/arrow_down_light.png"></a>
         </div>
     </section>
 
@@ -113,7 +113,7 @@
         <a href="#contact-us" class="btn btn-rounded btn-primary mt-7">Contact us</a>
 
         <div class="next-arrow mt-5">
-            <a href="#contact-us"><img src="assets/arrow_down_light.png"></a>
+            <a onclick="scrollToSection('contact-us')"><img src="assets/arrow_down_light.png"></a>
         </div>
     </section>
 
@@ -157,13 +157,30 @@
     </section>
 
     <footer>
-        Designed by <a href="mailto:mohamed.benamar@ieee.org">Mohamed ben amar</a>
+
+        <div class="container flex space-between">
+            <div>
+                <h3>Who are we?</h3>
+                <div>
+                    We are a group of passionate students from Sfax, Tunisia who love to solve problems while making this world a better place 
+                </div>
+            </div>
+    
+            <div>
+                <h3>Social networks</h3>
+                <div >
+                    <a href="#"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#"><img src="assets/facebook.png" alt=""></a>
+                    <a href="#"><img src="assets/linkedin.png" alt=""></a>
+                    <a href="#"><img src="assets/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright">Green Farm &copy; 2020 &nbsp;<span class="author"><span class="secondary">Designed by</span> <a href="mailto:mohamed.benamar@ieee.org">Mohamed ben amar</a></span></div>
     </footer>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
   <script src="script.js"></script>
 </body>

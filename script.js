@@ -13,10 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     collapseBtn.addEventListener('click', () => {
-        navMenu.style.display = navMenu.style.display == 'block' ? 'none' : 'block';
         headerContainer.style.lineHeight = 'none';
-
-        navMenu.classList.add('animated', 'slideInDown', 'fadeIn');
+        $(navMenu).slideToggle(500);
     });
 
     const x = window.matchMedia('(max-width: 720px)');
@@ -57,4 +55,17 @@ window.addEventListener('DOMContentLoaded', () => {
 function showYoutubeVideo() {
     const ytPlayer = document.querySelector('.video-container');
     ytPlayer.style.display = 'block'
+}
+
+
+function scrollToSection(section) {
+    if (section === 'home') {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    } else if (section === 'idea-video') {
+        $("html, body").animate({ scrollTop: $('#' + section).offset().top }, 1000);
+    } else if (section === 'meet-team') {
+        $("html, body").animate({ scrollTop: $('#' + section).offset().top - 100 }, 1000);
+    } else if (section === 'contact-us') {
+        $("html, body").animate({ scrollTop: $('#' + section).offset().top + 100 }, 1000);
+    }
 }
