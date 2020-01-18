@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Green farm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <header id="home" class="">
+        <div class="container flex space-between">
+                <img class="brand" src="assets/logo.png">
+
+                <nav id="navMenu">
+                    <ul>
+                        <li><a class="active" href="#" id="homeNavBtn">Home</a></li>
+                        <li><a href="#idea-video" id="ideaNavBtn">Our idea</a></li>
+                        <li><a href="#meet-team" id="teamNavBtn">The team</a></li>
+                        <li><a href="#contact-us" id="contactNavBtn">Contact us</a></li>
+                    </ul>
+                </nav>
+
+                <div id="collapseMenu" >
+                    <img height="25" src="assets/menu.png">
+                </div>
+        </div>
+        
+    </header>
+    
+    <section class="landing">
+
+        <div class="landing-text">
+            <h3 class="secondary">We empower small-scale farmers by</h3>
+            <h1>Increasing their access to</h1>
+            <h1 class="accent">renewable energy</h1>
+        </div>
+
+        <div class="call-to-action">
+            <h3 class="secondary">Reducing the environmental impact of dairy farming</h3>
+        
+            <div class="call-to-action-btn">
+                <a href="#" class="btn btn-rounded btn-accent">Learn more</a>
+                <a href="#" class="btn btn-rounded btn-primary">Meet the team</a>
+            </div>
+        </div>
+
+        <div class="next-arrow mt-5 animated fadeInDown">
+            <a href="#idea-video"><img src="assets/arrow_down.png"></a>
+        </div>
+
+    </section>
+
+    <section id="idea-video" class="video">
+        <h1 class="secondary">Get started by watching our video</h1>
+        <h1 class="highlight mt-1">Our idea in 3 minutes</h1>
+        <div class="separator mt-3"></div>
+        <h2 class="secondary mt-10">PLAY NOW</h2>
+
+        <a class="play mt-10" href="javascript:showYoutubeVideo()"><img src="assets/play_video.png"></a>
+    
+        <div class="video-container">
+            <iframe id="ytplayer" type="text/html" width="900" height="506"
+                src="https://www.youtube.com/embed/M7lc1UVf-VE?controls=0&modestbranding=1"
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="next-arrow mt-5 animated fadeInDown">
+            <a href="#meet-team"><img src="assets/arrow_down_light.png"></a>
+        </div>
+    </section>
+
+    <section id="meet-team" class="team">
+        <h1>Meet the <span class="info">team</span></h1>
+    
+        <div class="container team-members flex flex-center">
+
+            <div class="team-member">
+                <img src="assets/pierre.png" class="profil-pic">
+                <div class="name">Pierre Ducer</div>
+                <div class="role">IEEE Student Member</div>
+                <div class="job dark mt-1">ELECTRO-MECHANICAL ENGINEERING STUDENT</div>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/yann.png" class="profil-pic">
+                <div class="name">Yann Tchikaya</div>
+                <div class="role">IEEE SB Secretary</div>
+                <div class="job dark mt-1">ELECTRO-MECHANICAL ENGINEERING STUDENT</div>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/med.png" class="profil-pic">
+                <div class="name">Med Ben Amar</div>
+                <div class="role">IEEE Student Member</div>
+                <div class="job dark mt-1">DEVELOPER / IT STUDENT</div>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/skan.png" class="profil-pic">
+                <div class="name">Iskandar Ghorbel</div>
+                <div class="role">IEEE SB Vice-chair</div>
+                <div class="job dark mt-1">Petroleum engineering student</div>
+            </div>
+
+        </div>
+
+        <a href="#contact-us" class="btn btn-rounded btn-primary mt-7">Contact us</a>
+
+        <div class="next-arrow mt-5">
+            <a href="#contact-us"><img src="assets/arrow_down_light.png"></a>
+        </div>
+    </section>
+
+    <section id="contact-us" class="contact-us flex flex-center">
+
+
+        <form id="contact-form">
+            <h2>Contact form</h2>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="Full name">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" id="message" placeholder="Message">
+            </div>
+
+            <a href="#" class="btn btn-rounded btn-light mt-2">Send</a>
+
+        </form>
+        <div id="social-medias">
+            <h2>Social medias</h2>
+
+            <div class="flex flex-center">
+                <a href="#"><img src="assets/instagram.png" alt=""></a>
+                <a href="#"><img src="assets/facebook.png" alt=""></a>
+                <a href="#"><img src="assets/linkedin.png" alt=""></a>
+                <a href="#"><img src="assets/youtube.png" alt=""></a>
+            
+            </div>
+            <a href="#contact-us" class="btn btn-rounded btn-primary mt-7">Take a tour</a>
+
+        </div>
+    </section>
+
+    <footer>
+        Designed by <a href="mailto:mohamed.benamar@ieee.org">Mohamed ben amar</a>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
