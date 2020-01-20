@@ -35,11 +35,11 @@ window.addEventListener('DOMContentLoaded', () => {
      $(window).scroll(function(e) {
         const scrollTop = $(document).scrollTop();
         removeActiveClass();
-        if (scrollTop < 760) {
+        if (scrollTop < 660) {
             navLinks.home.classList.add('active');
-        } else if (scrollTop < 1720) {
+        } else if (scrollTop < 1700) {
             navLinks.idea.classList.add('active');
-        } else if (scrollTop < 2760) {
+        } else if (scrollTop < 2600) {
             navLinks.team.classList.add('active');
         } else {         
             navLinks.contact.classList.add('active');
